@@ -1,5 +1,16 @@
+<div align="center">
+  <h1>discord-buttons</h1>
+  <p>
+    <a href="https://www.npmjs.com/package/popcat-wrapper"><img src="https://img.shields.io/npm/v/popcat-wrapper?maxAge=3600" alt="NPM version" /></a>
+    <a href="https://www.npmjs.com/package/popcat-wrapper"><img src="https://img.shields.io/npm/dt/popcat-wrapper?maxAge=3600" alt="NPM downloads" /></a>
+  </p>
+  <p>
+    <a href="https://www.npmjs.com/package/discord-buttons"><img src="https://nodei.co/npm/discord-buttons.png?downloads=true&stars=true" alt="NPM Banner"></a>
+  </p>
+</div>
 
-An API wrapper for the Pop Cat API To Make Your Life Easier While Using It! 
+# Community
+<a href="https://discord.gg/UFsejAWMmJ"><img src="https://discord.com/api/guilds/838267479881023538/widget.png?style=banner1"></a>
  
 ## Installation
 ```
@@ -86,7 +97,7 @@ So, if you want to collect for example the rgb, you need to:
 console.log(output.rgb)
 ` (gives out the rgb value of 'ffcc99' hex.)
 
- This method applies for Playstore, iTunes, WouldYouRather, RandomMeme and Colorinfo.
+ This method applies for Playstore, iTunes, WouldYouRather, RandomMeme, instagramUser and Colorinfo.
 
 
 ### Welcome Card
@@ -110,7 +121,6 @@ But here is the list:
  - `biden(text)`
  - `pikachu(text)`
  - `drip(image)`
- - `clown(image)`
  - `clown(image_url)`
  - `ad(image_url)`
  - `blur(image_url)`
@@ -130,6 +140,7 @@ But here is the list:
  - `texttomorse(text)`
  - `playstore(app_name)`
  - `itunes(song_name)`
+ - `instagramUser(user_name)`
  - `colorinfo(color_hex)`
  - `welcomecard(background, avatar, text_1, text_2, text_3)`
  - `joke()`
