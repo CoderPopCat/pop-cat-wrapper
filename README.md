@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>discord-buttons</h1>
+  <h1>PopCat-Wrapper</h1>
   <p>
     <a href="https://www.npmjs.com/package/popcat-wrapper"><img src="https://img.shields.io/npm/v/popcat-wrapper?maxAge=3600" alt="NPM version" /></a>
     <a href="https://www.npmjs.com/package/popcat-wrapper"><img src="https://img.shields.io/npm/dt/popcat-wrapper?maxAge=3600" alt="NPM downloads" /></a>
@@ -10,7 +10,7 @@
 </div>
 
 # Community
-<a href="https://discord.gg/UFsejAWMmJ"><img src="https://discord.com/api/guilds/838267479881023538/widget.png?style=banner1"></a>
+<p>Join <a href="https://discord.gg/UFsejAWMmJ">Our Server</a> If you want to have fun or need any support!</p>
  
 ## Installation
 ```
