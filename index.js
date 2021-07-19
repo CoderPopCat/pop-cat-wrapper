@@ -5,7 +5,34 @@ async function request(endpoint, input='') {
  const res = `${baseurl}${endpoint}?${input}`
  return res;
 }
-
+module.exports.npm = async function(pkg) {
+  if(!pkg) throw new Error("The field 'package name' was left empty in the NPM function!")
+  const url = `https://api.popcatdev.repl.co/npm?q=${encodeURIComponent(pkg)}`
+  const res = await fetch(url)
+  const obj = await res.text()
+  const js = JSON.parse(obj)
+  if(js.error) throw new Error(js.error)
+  else {
+    return js;
+  }
+}
+module.exports.fact = async function() {
+  const url = `https://api.popcatdev.repl.co/fact`
+  const fa = await fetch(url)
+  const fact = await fa.json()
+  const final = fact.fact;
+  return final
+}
+module.exports.instagramUser = async function(username) {
+  if(!username) throw new Error("The field 'username' was left empty in the instagramUser function!")
+  const name = username;
+  const url = `https://api.popcatdev.repl.co/instagram?user=${name.split(" ").join("_")}`
+  const res = await fetch(url)
+  const account = await res.text()
+  if(account.includes("error")) throw new Error("Not a valid instagram user!")
+  const js = JSON.parse(account)
+  return js;
+}
 module.exports.drake = async function(text1, text2) {
    if(!text1) throw new Error('The field text1 was left empty in the drake function')
     if(!text2) throw new Error('The field text2 was left empty in the drake function')
@@ -69,7 +96,7 @@ module.exports.translate = async function(text, to) {
   const input = `text=${encodeURIComponent(text)}&to=${encodeURIComponent(to)}`
   const res = await fetch("https://api.popcatdev.repl.co/translate?" + input)
   const json = await res.json()
-  return res.translated;
+  return json.translated;
 }
 module.exports.reverse = async function(text) {
   if(!text) throw new Error("The field 'text' was left empty in the reverse function")
