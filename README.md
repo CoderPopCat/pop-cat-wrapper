@@ -5,7 +5,7 @@
     <a href="https://www.npmjs.com/package/popcat-wrapper"><img src="https://img.shields.io/npm/dt/popcat-wrapper?maxAge=3600" alt="NPM downloads" /></a>
   </p>
   <p>
-    <a href="https://www.npmjs.com/package/discord-buttons"><img src="https://nodei.co/npm/discord-buttons.png?downloads=true&stars=true" alt="NPM Banner"></a>
+    <a href="https://www.npmjs.com/package/popcat-wrapper"><img src="https://nodei.co/npm/popcat-wrapper.png?downloads=true&stars=true" alt="NPM Banner"></a>
   </p>
 </div>
 
@@ -97,7 +97,7 @@ So, if you want to collect for example the rgb, you need to:
 console.log(output.rgb)
 ` (gives out the rgb value of 'ffcc99' hex.)
 
- This method applies for Playstore, iTunes, WouldYouRather, RandomMeme, instagramUser and Colorinfo.
+ This method applies for Playstore, iTunes, WouldYouRather, RandomMeme, instagramUser, npm and Colorinfo.
 
 
 ### Welcome Card
@@ -140,12 +140,15 @@ But here is the list:
  - `texttomorse(text)`
  - `playstore(app_name)`
  - `itunes(song_name)`
+ - `npm(package_name)`
  - `instagramUser(user_name)`
  - `colorinfo(color_hex)`
  - `welcomecard(background, avatar, text_1, text_2, text_3)`
  - `joke()`
  - `randommeme()`
+ - `fact()`
  - `_8ball()`
+
 
 
 ## Credits
