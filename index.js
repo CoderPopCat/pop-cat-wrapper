@@ -5,6 +5,15 @@ async function request(endpoint, input='') {
  const res = `${baseurl}${endpoint}?${input}`
  return res;
 }
+module.exports.country = async function(name) {
+  if(!name) throw new Error("The field 'counry name' was left empty in the COUNTRY function!")
+  const url = `${baseurl}countries/${encodeURIComponent(name)}`
+  const res = await fetch(url)
+  const js = await res.text()
+  const obj = JSON.parse(js)
+  if(obj.error) throw new Error("Invalid country name in the COUNTRY function!")
+  return obj;
+}
 module.exports.npm = async function(pkg) {
   if(!pkg) throw new Error("The field 'package name' was left empty in the NPM function!")
   const url = `https://api.popcatdev.repl.co/npm?q=${encodeURIComponent(pkg)}`
