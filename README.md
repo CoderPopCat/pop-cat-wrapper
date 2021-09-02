@@ -95,9 +95,9 @@ So, if you want to collect for example the rgb, you need to:
 
 `
 console.log(output.rgb)
-` (gives out the rgb value of 'ffcc99' hex.)
+` (gives the rgb value of 'ffcc99' hex.)
 
- This method applies for Playstore, iTunes, WouldYouRather, RandomMeme, instagramUser, npm and Colorinfo.
+ This method applies to Playstore, iTunes, WouldYouRather, RandomMeme, instagramUser, npm and Colorinfo.
 
 
 ### Welcome Card
