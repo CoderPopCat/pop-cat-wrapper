@@ -12,6 +12,8 @@
 # Community
 <p>Join <a href="https://discord.gg/UFsejAWMmJ">Our Server</a> If you want to have fun or need any support!</p>
  
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y56OOQW)
+
 ## Installation
 ```
 npm i popcat-wrapper
